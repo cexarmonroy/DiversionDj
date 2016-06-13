@@ -13,6 +13,10 @@ namespace DjSite.Controllers
             return View();
         }
 
+        public ActionResult Noticias()
+        {
+            return View();
+        }
     
     }
 }
