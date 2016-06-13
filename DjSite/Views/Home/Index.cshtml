@@ -1,0 +1,357 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+<div id="layout" class="full">
+    <!-- popup login -->
+    <div id="popupLogin">
+        <div class="def-block widget">
+            <h4> Login </h4><span class="liner"></span>
+            <div class="widget-content row-fluid">
+                <form id="popup_login_form">
+                    <input type="text" name="login_username" id="login_username" onfocus="if (this.value=='username') this.value = '';" onblur="if (this.value=='') this.value = 'Usuario';" value="Usuario" placeholder="Usuario">
+                    <input type="password" name="login_password" id="login_password" onfocus="if (this.value=='password') this.value = '';" onblur="if (this.value=='') this.value = 'password';" value="password" placeholder="Password">
+                    <a href="#" class="tbutton small"><span>Iniciar Sesión</span></a>
+                    <a href="#" class="tbutton color2 small"><span>Registrarse</span></a>
+                </form><!-- login form -->
+            </div><!-- content -->
+        </div><!-- widget -->
+        <div id="popupLoginClose">x</div>
+    </div><!-- popup login -->
+    <div id="LoginBackgroundPopup"></div>
+    <!-- popup login -->
+
+    <header id="header" class="glue">
+        <div class="row clearfix">
+            <div class="little-head">
+                <div id="Login_PopUp_Link" class="sign-btn tbutton small"><span>Iniciar Sesión</span></div>
+
+                <div class="social social-head">
+                    <a href="https://twitter.com/diversiondj" class="bottomtip" title="Sigueme en Twitter" target="_blank"><i class="icon-twitter"></i></a>
+                    <a href="https://www.facebook.com/Diversion-Dj-81993277783/" class="bottomtip" title="Like Facebook" target="_blank"><i class="icon-facebook"></i></a>
+                    <a href="https://plus.google.com/" class="bottomtip" title="GooglePlus" target="_blank"><i class="icon-google-plus"></i></a>
+                    <a href="https://www.instagram.com/diversiondj/" class="bottomtip" title="Instagram" target="_blank"><i class="icon-instagram"></i></a>
+                    <a href="https://soundcloud.com/diversiondj" class="bottomtip" title="Soundcloud" target="_blank"><i class="icon-cloud"></i></a>
+                    <a href="http://www.linkedin.com/" class="bottomtip" title="Linkedin" target="_blank"><i class="icon-linkedin"></i></a>
+                </div><!-- end social -->
+
+                <div class="search">
+                    <form action="search.html" id="search" method="get">
+                        <input id="inputhead" name="search" type="text" onfocus="if (this.value == 'Empezar a buscar...') this.value = '';" onblur="    if (this.value == '') this.value = 'Empezar a buscar...';" value="Empezar a buscar..." placeholder="Empezar a buscar...">
+                        <button type="submit"><i class="icon-search"></i></button>
+                    </form><!-- end form -->
+                </div><!-- search -->
+            </div><!-- little head -->
+        </div><!-- row -->
+
+        <div class="headdown">
+            <div class="row clearfix">
+                <div class="logo bottomtip" title="Diversion Dj">
+                    <a href="#"><img src="@Url.Content("~/Content/MyTemplate/")images/logo.png" alt="DiversionDj"></a>
+                </div><!-- end logo -->
+
+                <nav>
+                    <ul class="sf-menu">
+                        <li class="current selectedLava">
+                            <a href="index.html">Home<span class="sub">Comienza aquí</span></a>
+                            <ul>
+                                <li><a href="index_revolution.html">Noticias</a></li>
+                                <li><a href="events.html">Eventos</a></li>
+                                <li><a href="index_modern.html">Acerca de mi</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="mp3s.html">Musica<span class="sub">Escuchame</span></a></li>
+                        <li><a href="videos.html">Video<span class="sub">Algunos demos</span></a></li>
+                        <li>
+                            <a href="gallery4.html">Galeria<span class="sub">Photo Gallery</span></a>
+                            <ul>
+                                <li><a href="gallery4.html">Gallery 4 Column</a></li>
+                                <li><a href="gallery3.html">Gallery 3 Column</a></li>
+                                <li><a href="gallery2.html">Gallery 2 Column</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Contacto<span class="sub">Arma tu Fiesta</span></a>
+                            <ul>
+                                <li><a href="contact.html">Envia tu Consulta</a></li>
+                                <li><a href="rtl.html">Crea tu lista</a></li>
+                                <li><a href="mp3_single_wide.html">Foro</a></li>
+
+                            </ul>
+                        </li>
+                    </ul><!-- end menu -->
+                </nav><!-- end nav -->
+            </div><!-- row -->
+        </div><!-- headdown -->
+    </header><!-- end header -->
+    <!-- Start Revolution Slider -->
+    <div class="sliderr">
+        <div class="fullwidthbanner-container">
+            <div class="revolution">
+                <ul>
+                    <li data-transition="random" data-slotamount="7" data-masterspeed="300">
+                        <img src="@Url.Content("~/Content/MyTemplate/")images/slides/slider1.jpg" alt="slider">
+
+
+                        <div class="tp-caption sfr"
+                             data-x="730"
+                             data-y="480"
+                             data-speed="300"
+                             data-start="2000"
+                             data-easing="easeInOutExpo"><a href="mp3_single_half.html"><img src="@Url.Content("~/Content/MyTemplate/")images/slides/slide1-cap4.png" alt="Image 5"></a></div>
+
+                        @*<div class="tp-caption sfl"
+                            data-x="714"
+                            data-y="375"
+                            data-speed="300"
+                            data-start="2000"
+                            data-easing="easeInOutExpo"><img src="@Url.Content("~/Content/MyTemplate/")images/slides/slide1-cap5.png" alt="Image 6"></div>*@
+                    </li>
+
+                    <li data-transition="random" data-slotamount="7" data-masterspeed="300">
+                        <img src="@Url.Content("~/Content/MyTemplate/")images/slides/slider2.jpg" alt="slider2">
+
+
+                        <div class="tp-caption big_orange randomrotate"
+                             data-x="701"
+                             data-y="500"
+                             data-speed="500"
+                             data-start="1700"
+                             data-easing="easeInOutExpo">Arma tu Fiesta</div>
+
+                    </li>
+
+                    @*<li data-transition="random" data-slotamount="7" data-masterspeed="300">
+                            <img src="@Url.Content("~/Content/MyTemplate/")images/slides/slider3.jpg" alt="slider3">
+
+                            <div class="tp-caption large_text randomrotate"
+                                 data-x="559"
+                                 data-y="253"
+                                 data-speed="500"
+                                 data-start="1000"
+                                 data-easing="easeInOutExpo">Lo que tu buscabas</div>
+
+                            <div class="tp-caption medium_text randomrotate"
+                                 data-x="563"
+                                 data-y="313"
+                                 data-speed="500"
+                                 data-start="1500"
+                                 data-easing="easeInOutExpo">Música/Videos</div>
+
+                            <div class="tp-caption medium_text randomrotate"
+                                 data-x="565"
+                                 data-y="345"
+                                 data-speed="500"
+                                 data-start="2000"
+                                 data-easing="easeInOutExpo">Todos los estilos</div>
+
+                            <div class="tp-caption medium_text randomrotate"
+                                 data-x="567"
+                                 data-y="377"
+                                 data-speed="500"
+                                 data-start="2500"
+                                 data-easing="easeInOutExpo">Vive la experiencia</div>
+
+                            <div class="tp-caption small_text randomrotate"
+                                 data-x="566"
+                                 data-y="407"
+                                 data-speed="500"
+                                 data-start="3000"
+                                 data-easing="easeInOutExpo">Y mucho más ...</div>
+                        </li>*@
+
+
+                </ul><!-- End Slides -->
+                <div class="tp-bannertimer"></div><!-- Timer -->
+            </div>
+        </div>
+    </div>
+    <!-- End Revolution Slider -->
+    <div class="page-content">
+        <div class="row clearfix mbf">
+            <div class="music-player-list"></div>
+        </div><!-- row music player -->
+
+        <div class="row row-fluid clearfix mbf">
+            <div class="span8">
+                <div class="def-block">
+                    <h4> Noticias</h4><span class="liner"></span>
+
+                    <div class="news row-fluid animtt" data-gen="fadeUp" style="opacity:0;">
+                        <div class="span5"><img class="four-radius" src="@Url.Content("~/Content/MyTemplate/")images/assets/news1.jpg" alt="#"></div>
+                        <div class="span7">
+                            <h3 class="news-title"> <a href="news_single.html">Ranking Musica Actual</a> </h3>
+                            <p>Algunas de las canciones más tocadas en radios y Discoteques.</p>
+                            <div class="meta">
+                                <span> <i class="icon-time mi"></i>11 de Junio, 2016 00:17 PM </span>
+                            </div><!-- meta -->
+                            <a href="news_single.html" class="sign-btn tbutton small"><span>Leer más</span></a>
+                        </div><!-- span7 -->
+                    </div><!-- news -->
+
+                    <div class="news row-fluid animtt" data-gen="fadeUp" style="opacity:0;">
+                        <div class="span5"><img class="four-radius" src="@Url.Content("~/Content/MyTemplate/")images/assets/news2.jpg" alt="#"></div>
+                        <div class="span7">
+                            <h3 class="news-title"> <a href="news_single.html">Eurocopa de Francia 2016 en las manos de David Guetta</a> </h3>
+                            <p>Guetta ha creado la canción 'This One's for you' junto a Zara Larsson, canción oficial que sonará en toda Europa a partir de este viernes, día en el que comienza la Eurocopa de Francia 2016.</p>
+                            <div class="meta">
+                                <span> <i class="icon-time mi"></i>10 de Junio, 2016 11:01 AM </span>
+                            </div><!-- meta -->
+                            <a href="news_single.html" class="sign-btn tbutton small"><span>Leer más</span></a>
+                        </div><!-- span7 -->
+                    </div><!-- news -->
+
+                    <div class="news row-fluid animtt" data-gen="fadeUp" style="opacity:0;">
+                        <div class="span5"><img class="four-radius" src="@Url.Content("~/Content/MyTemplate/")images/assets/news3.jpg" alt="#"></div>
+                        <div class="span7">
+                            <h3 class="news-title"> <a href="news_single.html">Copa América Centenario a cargo de Pitbull y Becky g</a> </h3>
+                            <p>El cantante de origen cubano, y la artista de ascendencia mexicana serán los que presenten el tema oficial de la Copa América Centenario </p>
+                            <div class="meta">
+                                <span> <i class="icon-time mi"></i>04 de Junio ,2016 2:00 AM </span>
+                            </div><!-- meta -->
+                            <a href="news_single.html" class="tbutton small"><span>Leer más</span></a>
+                        </div><!-- span7 -->
+                    </div><!-- news -->
+                </div><!-- def block -->
+            </div><!-- span8 news -->
+
+            <div class="span4">
+                <div class="def-block widget animtt" data-gen="fadeUp" style="opacity:0;">
+                    <h4> Proximo Evento </h4><span class="liner"></span>
+                    <div class="widget-content row-fluid">
+                        <div class="span12 mb">
+                            <ul id="event1" class="event-timer">
+                                <li>
+                                    <span class="days">00</span>
+                                    <p class="timeRefDays">days</p>
+                                </li>
+                                <li>
+                                    <span class="hours">00</span>
+                                    <p class="timeRefHours">hours</p>
+                                </li>
+                                <li>
+                                    <span class="minutes">00</span>
+                                    <p class="timeRefMinutes">min</p>
+                                </li>
+                                <li>
+                                    <span class="seconds">00</span>
+                                    <p class="timeRefSeconds">sec</p>
+                                </li>
+                            </ul> <!-- end timer -->
+                        </div><!-- timer -->
+                        @*<div class="grid_8">
+                                <p class="event-titlett">Bono Serenades Warren</p>
+                            </div>
+                            <div class="grid_4">
+                                <a href="#" class="tbutton buy-ticket small"><span>Buy Ticket</span></a>
+                            </div>*@
+
+                    </div><!-- widget content -->
+                </div><!-- def block widget events -->
+
+                <div class="def-block widget animtt" data-gen="fadeUp" style="opacity:0;">
+                    <h4> Vídeos destacados</h4><span class="liner"></span>
+                    <div class="widget-content row-fluid">
+                        <div class="videos clearfix flexslider">
+                            <ul class="slides">
+                                <li class="featured-video">
+                                    <a href="video_single_wide.html">
+                                        <img src="@Url.Content("~/Content/MyTemplate/")images/assets/video1.jpg" alt="#">
+                                        <i class="icon-play-sign"></i>
+                                        <h3>Up&Up</h3>
+                                        <span>Coldplay</span>
+                                    </a>
+                                </li><!-- slide -->
+                                <li class="featured-video">
+                                    <a href="video_single_wide.html">
+                                        <img src="@Url.Content("~/Content/MyTemplate/")images/assets/video2.jpg" alt="#">
+                                        <i class="icon-play-sign"></i>
+                                        <h3>Uptown Funk ft. Bruno Mars</h3>
+                                        <span>Mark Ronson</span>
+                                    </a>
+                                </li><!-- slide -->
+                                <li class="featured-video">
+                                    <a href="video_single_wide.html">
+                                        <img src="@Url.Content("~/Content/MyTemplate/")images/assets/video3.jpg" alt="#">
+                                        <i class="icon-play-sign"></i>
+                                        <h3>DUELE EL CORAZON ft. Wisin</h3>
+                                        <span>Enrique Iglesias</span>
+                                    </a>
+                                </li><!-- slide -->
+                            </ul>
+                        </div>
+                    </div><!-- widget content -->
+                </div><!-- def block widget videos -->
+                @*<div class="def-block widget animtt" data-gen="fadeUp" style="opacity:0;">
+                        <h4> Popular </h4><span class="liner"></span>
+                        <div class="widget-content row-fluid">
+                            <div class="scroll-mp3" style="height: 220px;">
+                                <div class="content">
+                                    <ul class="tab-content-items">
+                                        <li class="clearfix">
+                                            <a class="m-thumbnail" href="mp3_single_half.html"><img width="50" height="50" src="images/assets/thumb-mp3-1.jpg" alt="#"></a>
+                                            <h3><a href="mp3_single_half.html">Don’t go mary ( Remix )</a></h3>
+                                            <span> Alexander </span>
+                                            <span> 1,892,250 Plays </span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="m-thumbnail" href="mp3_single_half.html"><img width="50" height="50" src="images/assets/thumb-mp3-2.jpg" alt="#"></a>
+                                            <h3><a href="mp3_single_half.html">That's My Kind Of Night </a></h3>
+                                            <span> Alexander Mikoole </span>
+                                            <span> 998,879 Plays </span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="m-thumbnail" href="mp3_single_half.html"><img width="50" height="50" src="images/assets/thumb-mp3-3.jpg" alt="#"></a>
+                                            <h3><a href="mp3_single_half.html">Magna Carta... Holy Grail </a></h3>
+                                            <span> Joe </span>
+                                            <span> 792,240 Plays </span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="m-thumbnail" href="mp3_single_half.html"><img width="50" height="50" src="images/assets/thumb-mp3-4.jpg" alt="#"></a>
+                                            <h3><a href="mp3_single_half.html">If you love me</a></h3>
+                                            <span> Enrique </span>
+                                            <span> 788,471 Plays </span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="m-thumbnail" href="mp3_single_half.html"><img width="50" height="50" src="images/assets/thumb-mp3-5.jpg" alt="#"></a>
+                                            <h3><a href="mp3_single_half.html">Burning For you</a></h3>
+                                            <span> Lura </span>
+                                            <span> 710,105 Plays </span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <a class="m-thumbnail" href="mp3_single_half.html"><img width="50" height="50" src="images/assets/thumb-mp3-6.jpg" alt="#"></a>
+                                            <h3><a href="mp3_single_half.html">Skyfool ( Dubstep Remix )</a></h3>
+                                            <span> Babel </span>
+                                            <span> 611,748 Plays </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><!-- widget content -->
+                    </div><!-- def block widget popular items -->*@
+
+            </div><!-- span4 sidebar -->
+        </div><!-- row clearfix -->
+
+    </div><!-- end page content -->
+    <footer id="footer">
+        <div class="footer-last">
+            <div class="row clearfix">
+                <span class="copyright">© 2016 by DiversionDj. All Rights Reserved.</span>
+                <div id="toTop"><i class="icon-angle-up"></i></div><!-- Back to top -->
+                <div class="foot-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="mp3s.html">Música</a></li>
+                        <li><a href="videos.html">Video</a></li>
+                        <li><a href="gallery.html">Galleria</a></li>
+                        <li><a href="contact.html">Contacto</a></li>
+                    </ul><!-- end links -->
+                </div><!-- end foot menu -->
+            </div><!-- row -->
+        </div><!-- end last -->
+
+    </footer><!-- end footer -->
+</div>

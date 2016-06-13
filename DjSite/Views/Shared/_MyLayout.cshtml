@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- Seo Meta -->
+    <meta name="description" content="DiversionDj - WebSite Oficial ">
+    <meta name="keywords" content="remix, music, dj, dark, party, html5">
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/MyTemplate/")bootstrap/css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/MyTemplate/")bootstrap/css/bootstrap-responsive.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/MyTemplate/")style.css" id="dark" media="screen" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/MyTemplate/")js/rs-plugin/css/settings.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/MyTemplate/")styles/icons/icons.css" media="screen" />
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="@Url.Content("~/Content/MyTemplate/")images/favicon.ico">
+    <link rel="apple-touch-icon" href="@Url.Content("~/Content/MyTemplate/")images/apple-touch-icon.png">
+
+    <script type="text/javascript" src="@Url.Content("~/Content/MyTemplate/")js/jquery.min.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/MyTemplate/")js/theme20.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/MyTemplate/")bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/MyTemplate/")js/rs-plugin/pluginsources/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/MyTemplate/")js/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/MyTemplate/")js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/MyTemplate/")js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/MyTemplate/")js/jquery.jplayer.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/MyTemplate/")js/ttw-music-player-min.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/MyTemplate/")music/myplaylist.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/MyTemplate/")js/countdown.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/MyTemplate/")js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/MyTemplate/")js/twitter/jquery.tweet.js"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/MyTemplate/")js/custom.js"></script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var tpj = jQuery;
+        tpj.noConflict();
+        tpj(document).ready(function () {
+            if (tpj.fn.cssOriginal != undefined)
+                tpj.fn.css = tpj.fn.cssOriginal;
+            var api = tpj('.revolution').revolution({
+                delay: 9000,
+                startheight: 380,
+                startwidth: 960,
+                hideThumbs: 200,
+                thumbWidth: 80,
+                thumbHeight: 50,
+                thumbAmount: 5,
+                navigationType: "none",
+                navigationArrows: "verticalcentered",
+                navigationStyle: "square",
+                touchenabled: "on",
+                onHoverStop: "on",
+                navOffsetHorizontal: 0,
+                navOffsetVertical: 20,
+                shadow: 0
+            });
+            tpj("#event1").countdown({
+                date: "11 June 2016 23:59:59",
+                format: "on"
+            },
+			function () {
+			    // callback function
+			});
+        });
+        /* ]]> */
+    </script>
+
+</head>
+<body id="fluidGridSystem">
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
