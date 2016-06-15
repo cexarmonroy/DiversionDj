@@ -187,10 +187,24 @@
                             <div class="meta">
                                 <span> <i class="icon-time mi"></i>11 de Junio, 2016 00:17 PM </span>
                             </div><!-- meta -->
-                            <a href="news_single.html" class="sign-btn tbutton small"><span>Leer más</span></a>
+                            <a href="#" class="sign-btn tbutton small" id="leerA"><span>Leer más</span></a>
+                            <div id="leerDiv"></div>
                         </div><!-- span7 -->
                     </div><!-- news -->
-
+                    <script type="text/javascript">
+                        jQuery(document).ready(function () {                       
+                            jQuery('#leerA').click(function (e) {
+                                e.preventDefault(); //Para que no se vaya al link
+                                jQuery.ajax({
+                                    url: 'Home/test',
+                                    type:'get'
+                                }).done(function (vistaParcial) {
+                                    jQuery('#leerDiv').html(vistaParcial);
+                                });                                  
+                            });
+                           
+                        });
+                    </script>
                     <div class="news row-fluid animtt" data-gen="fadeUp" style="opacity:0;">
                         <div class="span5"><img class="four-radius" src="@Url.Content("~/Content/MyTemplate/")images/assets/news2.jpg" alt="#"></div>
                         <div class="span7">

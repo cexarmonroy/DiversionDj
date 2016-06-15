@@ -21,7 +21,7 @@
 			
 			if(eventDate <= currentDate) {
 				callback.call(this);
-				clearInterval(interval);
+				//clearInterval(interval);
 			}
 			seconds = eventDate - currentDate;
 			days = Math.floor(seconds / (60 * 60 * 24)); //calculate the number of days
