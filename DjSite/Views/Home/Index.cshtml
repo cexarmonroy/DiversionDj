@@ -3,7 +3,7 @@
     Layout = "~/Views/Shared/_MyLayout.cshtml";
 }
 <style>
-    #element_to_pop_up {
+    #popupNoticias {
         background-color: #fff;
         border-radius: 15px;
         color: #000;
@@ -205,14 +205,12 @@
                                 <span> <i class="icon-time mi"></i>11 de Junio, 2016 00:17 PM </span>
                             </div><!-- meta -->
                             <a href="#" class="sign-btn tbutton small" id="leerA"><span>Leer más</span></a>
-                            @*<div id="leerDiv">
-                                    hola mundo
-                                </div>*@
-                            <div id="element_to_pop_up">
+                            <div id="popupNoticias">
                                 <a class="b-close">
-                                   x</a>                                   
-                                    Prueba de popup noticias
+                                    x</a>
+
                             </div>
+                          
                         </div><!-- span7 -->
                     </div><!-- news -->
 
@@ -220,8 +218,12 @@
                         jQuery(document).ready(function () {
                             jQuery('#leerA').click(function (e) {
                                 e.preventDefault(); //Para que no se vaya al link
-
-                                jQuery('#element_to_pop_up').bPopup();
+                                jQuery.ajax({
+                                    url: 'Noticias',
+                                    type: 'get'
+                                }).done(function (vistaParcial) {
+                                    jQuery('#popupNoticias').html(vistaParcial).bPopup();
+                                });
                             });
                         });
                     </script>

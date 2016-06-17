@@ -15,6 +15,7 @@ namespace DjSite.Controllers
 
         public ActionResult Noticias()
         {
+            ViewBag.Nombre = "Cesar";
             return View();
         }
 
