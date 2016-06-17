@@ -170,9 +170,9 @@
     </div>
     <!-- End Revolution Slider -->
     <div class="page-content">
-        <div class="row clearfix mbf">
+        @*<div class="row clearfix mbf">
             <div class="music-player-list"></div>
-        </div><!-- row music player -->
+        </div>*@<!-- row music player -->
 
         <div class="row row-fluid clearfix mbf">
             <div class="span8">
@@ -195,16 +195,29 @@
                         jQuery(document).ready(function () {                       
                             jQuery('#leerA').click(function (e) {
                                 e.preventDefault(); //Para que no se vaya al link
-                                jQuery.ajax({
-                                    url: 'Home/test',
-                                    type:'get'
-                                }).done(function (vistaParcial) {
-                                    jQuery('#leerDiv').html(vistaParcial);
-                                });                                  
+                              
+                                bootbox.dialog({
+                                    title: "Test",
+                                    message: '<img src="@Url.Content("~/Content/MyTemplate/")images/assets/news1.jpg"" width="100px"/><br/> Probando probando'
+                                });  
                             });
-                           
                         });
                     </script>
+                    @*<script type="text/javascript">
+                        jQuery(document).ready(function () {
+                            jQuery('#leerA').click(function (e) {
+                                e.preventDefault(); //Para que no se vaya al link
+                                jQuery.ajax({
+                                    url: 'test',
+                                    type: 'get'
+                                }).done(function (vistaParcial) {
+                                    jQuery('#leerDiv').html(vistaParcial);
+                                });
+                            });
+
+                        });
+                    </script>*@
+
                     <div class="news row-fluid animtt" data-gen="fadeUp" style="opacity:0;">
                         <div class="span5"><img class="four-radius" src="@Url.Content("~/Content/MyTemplate/")images/assets/news2.jpg" alt="#"></div>
                         <div class="span7">

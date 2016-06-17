@@ -21,8 +21,7 @@ namespace DjSite.Controllers
         public ActionResult test()
         {
             ViewBag.Nombre = "Cesar";
-            lista de modelos
-            return View("test",lista de modelos);
+            return View();
         }
     
     }
