@@ -208,13 +208,22 @@
                             <div id="popupNoticias">
                                 <a class="b-close">
                                     x</a>
-
+                                <center> <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A12172370310%3Aplaylist%3A5wqUEngWBQjeOI0szUzGRw" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></center>
                             </div>
                           
                         </div><!-- span7 -->
                     </div><!-- news -->
-
                     <script type="text/javascript">
+                        jQuery(document).ready(function () {
+                            jQuery('#leerA').click(function (e) {
+                                e.preventDefault(); //Para que no se vaya al link
+                               
+                                    jQuery('#popupNoticias').bPopup();
+                              
+                            });
+                        });
+                    </script>
+                    @*<script type="text/javascript">
                         jQuery(document).ready(function () {
                             jQuery('#leerA').click(function (e) {
                                 e.preventDefault(); //Para que no se vaya al link
@@ -226,7 +235,7 @@
                                 });
                             });
                         });
-                    </script>
+                    </script>*@
                     @*<script type="text/javascript">
                             jQuery(document).ready(function () {
                                 jQuery('#leerA').click(function (e) {
