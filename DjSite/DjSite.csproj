@@ -342,6 +342,7 @@
     <Content Include="Content\MyTemplate\js\custom.js" />
     <Content Include="Content\MyTemplate\js\gmap3.js" />
     <Content Include="Content\MyTemplate\js\Jplayer.swf" />
+    <Content Include="Content\MyTemplate\js\jquery.bpopup.min.js" />
     <Content Include="Content\MyTemplate\js\jquery.flexslider-min.js" />
     <Content Include="Content\MyTemplate\js\jquery.jplayer.js" />
     <Content Include="Content\MyTemplate\js\jquery.masonry.min.js" />

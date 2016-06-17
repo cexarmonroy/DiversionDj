@@ -219,3 +219,4 @@ C:\DiversiondjWeb\DjSite\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resourc
 C:\DiversiondjWeb\DjSite\obj\Debug\DjSite.csprojResolveAssemblyReference.cache
 C:\DiversiondjWeb\DjSite\obj\Debug\DjSite.dll
 C:\DiversiondjWeb\DjSite\obj\Debug\DjSite.pdb
+E:\GitHubSitio\DjSite\obj\Debug\DjSite.csprojResolveAssemblyReference.cache

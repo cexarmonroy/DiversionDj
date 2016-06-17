@@ -2,7 +2,24 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_MyLayout.cshtml";
 }
+<style>
+    #element_to_pop_up {
+        background-color: #fff;
+        border-radius: 15px;
+        color: #000;
+        display: none;
+        padding: 20px;
+        min-width: 400px;
+        min-height: 180px;
+    }
 
+    .b-close {
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+    }
+</style>
 <div id="layout" class="full">
     <!-- popup login -->
     <div id="popupLogin">
@@ -171,8 +188,8 @@
     <!-- End Revolution Slider -->
     <div class="page-content">
         @*<div class="row clearfix mbf">
-            <div class="music-player-list"></div>
-        </div>*@<!-- row music player -->
+                <div class="music-player-list"></div>
+            </div>*@<!-- row music player -->
 
         <div class="row row-fluid clearfix mbf">
             <div class="span8">
@@ -188,35 +205,52 @@
                                 <span> <i class="icon-time mi"></i>11 de Junio, 2016 00:17 PM </span>
                             </div><!-- meta -->
                             <a href="#" class="sign-btn tbutton small" id="leerA"><span>Leer más</span></a>
-                            <div id="leerDiv"></div>
+                            @*<div id="leerDiv">
+                                    hola mundo
+                                </div>*@
+                            <div id="element_to_pop_up">
+                                <a class="b-close">
+                                   x</a>                                   
+                                    Prueba de popup noticias
+                            </div>
                         </div><!-- span7 -->
                     </div><!-- news -->
+
                     <script type="text/javascript">
-                        jQuery(document).ready(function () {                       
+                        jQuery(document).ready(function () {
                             jQuery('#leerA').click(function (e) {
                                 e.preventDefault(); //Para que no se vaya al link
-                              
-                                bootbox.dialog({
-                                    title: "Test",
-                                    message: '<img src="@Url.Content("~/Content/MyTemplate/")images/assets/news1.jpg"" width="100px"/><br/> Probando probando'
-                                });  
+
+                                jQuery('#element_to_pop_up').bPopup();
                             });
                         });
                     </script>
                     @*<script type="text/javascript">
-                        jQuery(document).ready(function () {
-                            jQuery('#leerA').click(function (e) {
-                                e.preventDefault(); //Para que no se vaya al link
-                                jQuery.ajax({
-                                    url: 'test',
-                                    type: 'get'
-                                }).done(function (vistaParcial) {
-                                    jQuery('#leerDiv').html(vistaParcial);
+                            jQuery(document).ready(function () {
+                                jQuery('#leerA').click(function (e) {
+                                    e.preventDefault(); //Para que no se vaya al link
+
+                                    bootbox.dialog({
+                                        title: "Test",
+                                        message: '<img src="@Url.Content("~/Content/MyTemplate/")images/assets/news1.jpg"" width="100px"/><br/> Probando probando'
+                                    });
                                 });
                             });
+                        </script>*@
+                    @*<script type="text/javascript">
+                            jQuery(document).ready(function () {
+                                jQuery('#leerA').click(function (e) {
+                                    e.preventDefault(); //Para que no se vaya al link
+                                    jQuery.ajax({
+                                        url: 'test',
+                                        type: 'get'
+                                    }).done(function (vistaParcial) {
+                                        jQuery('#leerDiv').html(vistaParcial);
+                                    });
+                                });
 
-                        });
-                    </script>*@
+                            });
+                        </script>*@
 
                     <div class="news row-fluid animtt" data-gen="fadeUp" style="opacity:0;">
                         <div class="span5"><img class="four-radius" src="@Url.Content("~/Content/MyTemplate/")images/assets/news2.jpg" alt="#"></div>
