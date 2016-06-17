@@ -12,9 +12,9 @@
         min-width: 400px;
         min-height: 180px;
     }
-
     .b-close {
         cursor: pointer;
+        color: #000;
         position: absolute;
         right: 10px;
         top: 5px;
@@ -71,7 +71,7 @@
                 <nav>
                     <ul class="sf-menu">
                         <li class="current selectedLava">
-                            <a href="index.html">Home<span class="sub">Comienza aquí</span></a>
+                            <a href="Index">Home<span class="sub">Comienza aquí</span></a>
                             <ul>
                                 <li><a href="index_revolution.html">Noticias</a></li>
                                 <li><a href="events.html">Eventos</a></li>
@@ -82,17 +82,15 @@
                         <li><a href="mp3s.html">Musica<span class="sub">Escuchame</span></a></li>
                         <li><a href="videos.html">Video<span class="sub">Algunos demos</span></a></li>
                         <li>
-                            <a href="gallery4.html">Galeria<span class="sub">Photo Gallery</span></a>
+                            <a href="gallery4.html">Galeria<span class="sub">Galeria de Fotos</span></a>
                             <ul>
-                                <li><a href="gallery4.html">Gallery 4 Column</a></li>
-                                <li><a href="gallery3.html">Gallery 3 Column</a></li>
-                                <li><a href="gallery2.html">Gallery 2 Column</a></li>
+                                <li><a href="Galeria">Galeria</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#">Contacto<span class="sub">Arma tu Fiesta</span></a>
                             <ul>
-                                <li><a href="contact.html">Envia tu Consulta</a></li>
+                                <li><a href="Contacto">Envia tu Consulta</a></li>
                                 <li><a href="rtl.html">Crea tu lista</a></li>
                                 <li><a href="mp3_single_wide.html">Foro</a></li>
 
@@ -206,24 +204,13 @@
                             </div><!-- meta -->
                             <a href="#" class="sign-btn tbutton small" id="leerA"><span>Leer más</span></a>
                             <div id="popupNoticias">
-                                <a class="b-close">
-                                    x</a>
-                                <center> <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A12172370310%3Aplaylist%3A5wqUEngWBQjeOI0szUzGRw" width="300" height="380" frameborder="0" allowtransparency="true"></iframe></center>
+                                
                             </div>
                           
                         </div><!-- span7 -->
                     </div><!-- news -->
+                  
                     <script type="text/javascript">
-                        jQuery(document).ready(function () {
-                            jQuery('#leerA').click(function (e) {
-                                e.preventDefault(); //Para que no se vaya al link
-                               
-                                    jQuery('#popupNoticias').bPopup();
-                              
-                            });
-                        });
-                    </script>
-                    @*<script type="text/javascript">
                         jQuery(document).ready(function () {
                             jQuery('#leerA').click(function (e) {
                                 e.preventDefault(); //Para que no se vaya al link
@@ -235,7 +222,7 @@
                                 });
                             });
                         });
-                    </script>*@
+                    </script>
                     @*<script type="text/javascript">
                             jQuery(document).ready(function () {
                                 jQuery('#leerA').click(function (e) {
@@ -415,7 +402,7 @@
                 <div id="toTop"><i class="icon-angle-up"></i></div><!-- Back to top -->
                 <div class="foot-menu">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Index">Home</a></li>
                         <li><a href="mp3s.html">Música</a></li>
                         <li><a href="videos.html">Video</a></li>
                         <li><a href="gallery.html">Galleria</a></li>

@@ -483,6 +483,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\test.cshtml" />
     <Content Include="Views\Home\Noticias.cshtml" />
+    <Content Include="Views\Home\Galeria.cshtml" />
+    <Content Include="Views\Home\Contacto.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

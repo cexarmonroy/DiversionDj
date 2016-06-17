@@ -24,6 +24,16 @@ namespace DjSite.Controllers
             ViewBag.Nombre = "Cesar";
             return View();
         }
+
+        public ActionResult Galeria()
+        {
+            return View();
+        }
+
+        public ActionResult Contacto()
+        {
+            return View();
+        }
     
     }
 }
