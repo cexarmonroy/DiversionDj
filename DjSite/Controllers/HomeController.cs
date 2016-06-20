@@ -15,13 +15,13 @@ namespace DjSite.Controllers
 
         public ActionResult Noticias()
         {
-            ViewBag.Nombre = "Cesar";
+            ViewBag.Titulo = "Ranking Musical";
             return View();
         }
 
         public ActionResult test()
         {
-            ViewBag.Nombre = "Cesar";
+            ViewBag.Titulo = "Ranking Musical";
             return View();
         }
 
