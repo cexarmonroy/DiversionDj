@@ -162,6 +162,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Musica.cs" />
+    <Compile Include="Models\Noticia.cs" />
+    <Compile Include="Models\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -343,6 +346,7 @@
     <Content Include="Content\MyTemplate\js\gmap3.js" />
     <Content Include="Content\MyTemplate\js\Jplayer.swf" />
     <Content Include="Content\MyTemplate\js\jquery.bpopup.min.js" />
+    <Content Include="Content\MyTemplate\js\jquery.easy-autocomplete.js" />
     <Content Include="Content\MyTemplate\js\jquery.flexslider-min.js" />
     <Content Include="Content\MyTemplate\js\jquery.jplayer.js" />
     <Content Include="Content\MyTemplate\js\jquery.masonry.min.js" />
@@ -351,6 +355,7 @@
     <Content Include="Content\MyTemplate\js\jquery.prettyPhoto.js" />
     <Content Include="Content\MyTemplate\js\jquery.stapel.js" />
     <Content Include="Content\MyTemplate\js\modernizr.custom.63321.js" />
+    <Content Include="Content\MyTemplate\js\pnotify.custom.js" />
     <Content Include="Content\MyTemplate\js\rs-plugin\css\settings.css" />
     <Content Include="Content\MyTemplate\js\rs-plugin\images\decor_inside.png" />
     <Content Include="Content\MyTemplate\js\rs-plugin\images\decor_inside_white.png" />
@@ -482,13 +487,14 @@
     <Content Include="Views\Shared\_MyLayout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\test.cshtml" />
-    <Content Include="Views\Home\Noticias.cshtml" />
     <Content Include="Views\Home\Galeria.cshtml" />
     <Content Include="Views\Home\Contacto.cshtml" />
+    <Content Include="Views\Home\Videos.cshtml" />
+    <Content Include="Views\Home\Noticias.cshtml" />
+    <Content Include="Views\Home\ArmarLista.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

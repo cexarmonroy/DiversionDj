@@ -1,9 +1,7 @@
-﻿
-@{
-    ViewBag.Title = "Galeria";
+﻿@{
+    ViewBag.Title = "Videos";
     Layout = "~/Views/Shared/_MyLayout.cshtml";
 }
-
 <div id="layout" class="full">
     <!-- popup login -->
     <div id="popupLogin">
@@ -85,52 +83,66 @@
             </div><!-- row -->
         </div><!-- headdown -->
     </header><!-- end header -->
+
     <div class="under_header">
-   
+        <img src="@Url.Content("~/Content/MyTemplate/")images/assets/breadcrumbs2.png" alt="#">
     </div><!-- under header -->
 
     <div class="page-content back_to_up">
-       
-      
+        <div class="row clearfix mb">
+            <div class="breadcrumbIn">
+                <ul>
+                    <li><a href="index.html" class="toptip" title="Homepage"> <i class="icon-home"></i> </a></li>
+                    <li><a href="videos.html"> Videos </a></li>
+                    <li> Video Single Wide </li>
+                </ul>
+            </div><!-- breadcrumb -->
+        </div><!-- row -->
 
         <div class="row row-fluid clearfix mbf">
             <div class="posts">
-                <div class="def-block" style="min-height: 400px;">
+                <div class="def-block">
+                    <div class="post row-fluid clearfix">
+                        @*<iframe src="https://player.vimeo.com/video/166570821?title=1&amp;byline=1&amp;portrait=1" height="500"></iframe>*@
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xFutjZEBTXs" frameborder="0" ></iframe>
+                        <h3 class="post-title">DUELE EL CORAZÓN (FEAT. WISIN)</h3>
+                        <p>El cantante español Enrique Iglesias estrenó su nueva canción, Duele el corazón, en la que cuenta con la colaboración del reguetonero puertorriqueño Wisin. Con Duele el corazón, Enrique Iglesias busca hacerse nuevamente con la titularidad en los principales ranking a nivel mundial, después de sus éxitos Bailando, en 2014, y El perdón, en 2015.</p>
 
-                    <div class="topbar">
-                        <div id="close" class="tbutton small tback"><span>< Back to Albums</span></div>
-                        <h4 id="name">Galeria de Fotos</h4><span class="liner"></span>
-                    </div>
+                        <p>
+                            <span> Tags: </span>
+                            <a href="#" class="#"> video </a>,
+                            <a href="#" class="#"> player </a>,
+                            <a href="#" class="#"> youtube </a>,
+                            <a href="#" class="#"> vimeo </a>
+                        </p><!-- tags -->
 
-                    <ul id="tp-grid" class="tp-grid">
-
-                        <!-- Summer Bash In CA -->
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/1.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/1.jpg" alt="#1" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/2.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/2.jpg" alt="#2" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/3.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/3.jpg" alt="#3" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/4.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/4.jpg" alt="#4" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/5.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/5.jpg" alt="#5" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/6.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/6.jpg" alt="#6" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/7.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/7.jpg" alt="#7" /></a></li>
-
-                        <!-- San Francisco Party -->
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/8.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/8.jpg" alt="#8" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/9.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/9.jpg" alt="#9" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/10.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/10.jpg" alt="#10" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/11.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/11.jpg" alt="#11" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/12.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/12.jpg" alt="#12" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/13.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/13.jpg" alt="#13" /></a></li>
+                        <div class="meta">
+                            <span> <i class="icon-user mi"></i> Admin </span>
+                            <span> <i class="icon-time mi"></i>20 de Julio, 2016 10:00 AM </span>
+                        </div><!-- meta -->
 
 
-                    </ul>
+                        <div class="like-post">
+                            <div id="fb-root"></div>
+                            <script>
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s); js.id = id;
+                                    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));</script>
+                            <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="80" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+                        </div><!-- like -->
+                    </div><!-- post -->
 
+                 
+              
                 </div><!-- def block -->
-            </div><!-- posts -->
+            </div><!-- span8 posts -->
 
         </div><!-- row clearfix -->
     </div><!-- end page content -->
-
-
     <footer id="footer">
         <div class="footer-last">
             <div class="row clearfix">
@@ -149,6 +161,4 @@
         </div><!-- end last -->
 
     </footer><!-- end footer -->
-
-</div><!-- end layout -->
-
+</div>

@@ -1,6 +1,7 @@
-﻿
+﻿@model DjSite.Models.Musica
+
 @{
-    ViewBag.Title = "Galeria";
+    ViewBag.Title = "ArmarLista";
     Layout = "~/Views/Shared/_MyLayout.cshtml";
 }
 
@@ -13,7 +14,7 @@
                 <form id="popup_login_form">
                     <input type="text" name="login_username" id="login_username" onfocus="if (this.value=='username') this.value = '';" onblur="if (this.value=='') this.value = 'Usuario';" value="Usuario" placeholder="Usuario">
                     <input type="password" name="login_password" id="login_password" onfocus="if (this.value=='password') this.value = '';" onblur="if (this.value=='') this.value = 'password';" value="password" placeholder="Password">
-                    <a href="#" class="tbutton small"><span>Iniciar Sesión</span></a>
+                    <a href="#" class="tbutton small" id="IngresarLogin"><span>Iniciar Sesión</span></a>
                     <a href="#" class="tbutton color2 small"><span>Registrarse</span></a>
                 </form><!-- login form -->
             </div><!-- content -->
@@ -22,7 +23,21 @@
     </div><!-- popup login -->
     <div id="LoginBackgroundPopup"></div>
     <!-- popup login -->
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('#IngresarLogin').click(function (e) {
+                e.preventDefault(); //Para que no se vaya al link
+                jQuery.ajax({
+                    url: '@Url.Content("~/Home/checkLogin")',
+                    type: 'POST',
+                    data: { usuario: jQuery('#login_username').val(), password: jQuery('#login_password').val() }
+                }).done(function (json) {
+                });
+            });
+        });
 
+
+    </script>
     <header id="header" class="glue">
         <div class="row clearfix">
             <div class="little-head">
@@ -85,52 +100,60 @@
             </div><!-- row -->
         </div><!-- headdown -->
     </header><!-- end header -->
+
     <div class="under_header">
-   
+        <img src="@Url.Content("~/Content/MyTemplate/")images/assets/breadcrumbs2.png" alt="#">
     </div><!-- under header -->
 
     <div class="page-content back_to_up">
-       
-      
 
-        <div class="row row-fluid clearfix mbf">
-            <div class="posts">
-                <div class="def-block" style="min-height: 400px;">
+        <div class="row forum clearfix mb">
+            <div class="def-block">
+                <h2>Buscador Musical<small> Ingresa Artista o Canción </small></h2>
+                <div class="search-forum">
+                    <form id="search-forum">
+                        <input type="text" onfocus="if (this.value == 'Empieza a buscar...') {this.value = '';}" onblur="if (this.value == '')  {this.value = 'Empieza a buscar...';}" value="Empieza a buscar..." id="termino">
+                        <button type="submit" id="enviarLista"> Guardar</button> 
+                    </form>
+                </div><!-- search forum -->
+            </div><!-- block -->
+        </div><!-- row -->
 
-                    <div class="topbar">
-                        <div id="close" class="tbutton small tback"><span>< Back to Albums</span></div>
-                        <h4 id="name">Galeria de Fotos</h4><span class="liner"></span>
-                    </div>
-
-                    <ul id="tp-grid" class="tp-grid">
-
-                        <!-- Summer Bash In CA -->
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/1.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/1.jpg" alt="#1" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/2.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/2.jpg" alt="#2" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/3.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/3.jpg" alt="#3" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/4.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/4.jpg" alt="#4" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/5.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/5.jpg" alt="#5" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/6.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/6.jpg" alt="#6" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/7.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/7.jpg" alt="#7" /></a></li>
-
-                        <!-- San Francisco Party -->
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/8.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/8.jpg" alt="#8" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/9.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/9.jpg" alt="#9" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/10.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/10.jpg" alt="#10" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/11.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/11.jpg" alt="#11" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/12.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/12.jpg" alt="#12" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/13.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/13.jpg" alt="#13" /></a></li>
-
-
-                    </ul>
+        <div class="row row-fluid forum clearfix mbf">
+            <div class="span9 posts">
+                <div class="def-block clearfix">
+                    <div class="mbf clearfix">
+                        <table class="table"id="resultados">
+                            <thead> <tr> <th>#</th> <th>Artista</th> <th>Album</th> <th>Tema</th> </tr> </thead>
+                            <tbody>                               
+                            </tbody>
+                        </table>
+                    </div>                 
+                    
+                  
 
                 </div><!-- def block -->
-            </div><!-- posts -->
+            </div><!-- span9 posts -->
 
+            <div class="span3 sidebar">
+                <div class="def-block widget">
+                    <h4> Crea tu lista </h4><span class="liner"></span>
+                    <div class="widget-content">
+                        <p>Selecciona toda la música que te gustaria que suene en tu fiesta y luego clickea guardar, puedes actualizar la lista durante toda la semana</p>
+                    </div><!-- widget content -->
+                </div><!-- def block widget text -->
+                <div class="def-block widget">
+                    <h4> Ranking Musical </h4><span class="liner"></span>
+                    <div class="widget-content clearfix">
+                        <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A12172370310%3Aplaylist%3A5wqUEngWBQjeOI0szUzGRw" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                    </div><!-- widget content -->
+                </div><!-- def block widget Login -->
+
+               
+
+            </div><!-- span3 sidebar -->
         </div><!-- row clearfix -->
     </div><!-- end page content -->
-
-
     <footer id="footer">
         <div class="footer-last">
             <div class="row clearfix">
@@ -149,6 +172,69 @@
         </div><!-- end last -->
 
     </footer><!-- end footer -->
+</div>
 
-</div><!-- end layout -->
+<script type="text/javascript">
+    var carrito = [];
+    jQuery(function () {
+        var options = {
+            url: "https://itunes.apple.com/search?",
+            getValue: "artistName",
+            listLocation: "results",
+            ajaxSettings: {
+                dataType: "jsonp",
+                method: "get",
+                data: {
+                    dataType: "json"
+                }
+            },
+            preparePostData: function (data) {
+                data.term = jQuery("#termino").val();
+                data.entity = "musicArtist";
+                return data;
+            },
+            list: {
+                onHideListEvent: function () {
+                    buscar(jQuery("#termino").val());
+                }
+            }
+        };
 
+        jQuery("#termino").easyAutocomplete(options);
+        jQuery('#resultados').on('click', '.choice', function () {
+            carrito.push(jQuery(this).val() + ';');
+            jQuery.ajax({
+                url: '@Url.Content("~/Home/Enviar")',
+                type: 'post',
+                data: carrito
+            })
+        });
+        function buscar(termino) {
+            termino = termino.replace(" ", "+");
+            console.log(termino);
+            var urlBusca = 'https://itunes.apple.com/search?term=' + termino;
+            jQuery.ajax({
+                url: urlBusca,
+                dataType: "jsonp"
+            }).done(function (json) {
+                var resultado = json.results;
+                var html = '';
+                jQuery.each(resultado, function (i, item) {
+                    html += '<tr> <th scope="row"><input class="choice" type="checkbox" value="' + item.artistName + '|' + item.trackName + '"></th> <td>' + item.artistName + '</td> <td>' + item.collectionName + '</td> <td>' + item.trackName + '</td> </tr>';
+                });
+                jQuery('#resultados >tbody').html(html);
+            });
+        };
+
+        jQuery('#enviarLista').click(function () {
+            var lista = carrito.toString();
+            jQuery.ajax({
+                url: '@Url.Content("~/Home/Enviar")',
+                type: 'POST',
+                data: { Lista: lista }
+            }).done(function (json) {
+
+            });
+        });
+    });
+</script>
