@@ -492,6 +492,7 @@
     <Content Include="Views\Home\Videos.cshtml" />
     <Content Include="Views\Home\Noticias.cshtml" />
     <Content Include="Views\Home\ArmarLista.cshtml" />
+    <Content Include="Views\Home\Musica.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

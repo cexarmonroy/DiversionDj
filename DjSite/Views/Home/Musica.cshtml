@@ -1,6 +1,5 @@
-﻿
-@{
-    ViewBag.Title = "Galeria";
+﻿@{
+    ViewBag.Title = "Musica";
     Layout = "~/Views/Shared/_MyLayout.cshtml";
 }
 
@@ -85,51 +84,77 @@
             </div><!-- row -->
         </div><!-- headdown -->
     </header><!-- end header -->
+
     <div class="under_header">
-   
+        <img src="images/assets/breadcrumbs6.png" alt="#">
     </div><!-- under header -->
 
     <div class="page-content back_to_up">
-       
-      
+        <div class="row clearfix mb">
+            <div class="breadcrumbIn">
+                <ul>
+                    <li><a href="@Url.Content("~/Home/Index")" class="toptip" title="Homepage"> <i class="icon-home"></i> </a></li>
+                    <li><a href="blog-right-sidebar.html"> Música </a></li>
+                    <li> Hits radiales, sesiones, remix y más podras encontrar... </li>
+                </ul>
+            </div><!-- breadcrumb -->
+        </div><!-- row -->
 
         <div class="row row-fluid clearfix mbf">
             <div class="posts">
-                <div class="def-block" style="min-height: 400px;">
-
-                    <div class="topbar">
-                        <div id="close" class="tbutton small tback"><span>< Back to Albums</span></div>
-                        <h4 id="name">Galeria de Fotos</h4><span class="liner"></span>
+                <div class="def-block">
+                    <div class="tac error-page clearfix">
+                        <i class="icon-warning-sign"></i>
+                        <h2 class="tac"> No se encuentra la página <small> Se esta trabajando, vuelve a intentarlo mas tarde :) </small></h2>
+                        <a href="@Url.Content("~/Home/Index")" class="tbutton medium"><span>Vuelve al Inicio</span></a>
                     </div>
-
-                    <ul id="tp-grid" class="tp-grid">
-
-                        <!-- Summer Bash In CA -->
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/1.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/1.jpg" alt="#1" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/2.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/2.jpg" alt="#2" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/3.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/3.jpg" alt="#3" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/4.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/4.jpg" alt="#4" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/5.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/5.jpg" alt="#5" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/6.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/6.jpg" alt="#6" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/7.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/7.jpg" alt="#7" /></a></li>
-
-                        <!-- San Francisco Party -->
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/8.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/8.jpg" alt="#8" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/9.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/9.jpg" alt="#9" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/10.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/10.jpg" alt="#10" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/11.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/11.jpg" alt="#11" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/12.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/12.jpg" alt="#12" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/13.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/13.jpg" alt="#13" /></a></li>
-
-
-                    </ul>
-
                 </div><!-- def block -->
             </div><!-- posts -->
-
         </div><!-- row clearfix -->
     </div><!-- end page content -->
 
+    @*<div class="span4 sidebar">
+        <div class="def-block widget">
+            <h4> Noticias </h4><span class="liner"></span>
+            <div class="widget-content">
+                <p>Si quieres recibir las actualizaciones de la pagina, ingresa tu correo.</p>
+                <form id="newsletters" method="post" action="http://feedburner.google.com/fb/a/mailverify" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=sevenpsd', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+                    <input type="email" onfocus="if (this.value=='Type Your Email') this.value = '';" onblur="if (this.value=='') this.value = 'Type Your Email';" value="Ingresa tu correo" placeholder="Type Your Email" required="required">
+                    <button type="submit"><i class="icon-ok"></i></button>
+                </form>
+            </div><!-- widget content -->
+        </div><!-- def block widget NewsLetters -->
+
+        <div class="def-block widget">
+            <h4> Categorias </h4><span class="liner"></span>
+            <div class="widget-content">
+                <ul class="list">
+                    <li><a href="#"><i class="icon-caret-right"></i> Electronica </a></li>
+                    <li><a href="#"><i class="icon-caret-right"></i> Pop</a></li>
+                    <li><a href="#"><i class="icon-caret-right"></i> Hip Hop</a></li>
+                    <li><a href="#"><i class="icon-caret-right"></i> Reggaeton</a></li>
+                </ul>
+            </div><!-- widget content -->
+        </div><!-- def block widget categories -->
+
+        <div class="def-block widget">
+            <h4> Tags </h4><span class="liner"></span>
+            <div class="widget-content tags">
+                <a href="#" class="#" title="17 topic"><i class="icon-tag"></i> Mp3 </a>
+                <a href="#" class="#" title="44 topic"><i class="icon-tag"></i> Mix </a>
+                <a href="#" class="#" title="10 topic"><i class="icon-tag"></i> Music </a>
+                <a href="#" class="#" title="20 topic"><i class="icon-tag"></i> Dj </a>
+                <a href="#" class="#" title="2 topic"><i class="icon-tag"></i> DiversionDj </a>
+                <a href="#" class="#" title="29 topic"><i class="icon-tag"></i> Hits </a>
+                <a href="#" class="#" title="4 topic"><i class="icon-tag"></i> Remix </a>
+            </div><!-- widget content -->
+        </div><!-- def block widget tags -->
+        @*<div class="def-block widget">
+                <h4>  </h4><span class="liner"></span>
+                <div class="widget-content tac">
+                    <a href="#" title="Advertise"><img src="images/ads1.gif" alt="#"></a>
+                </div><!-- widget content -->
+            </div><!-- def block widget ads -->*@
 
     <footer id="footer">
         <div class="footer-last">
@@ -149,6 +174,5 @@
         </div><!-- end last -->
 
     </footer><!-- end footer -->
-
-</div><!-- end layout -->
+</div>
 

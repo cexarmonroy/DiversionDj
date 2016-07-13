@@ -47,6 +47,11 @@ namespace DjSite.Controllers
             return View();
         }
 
+        public ActionResult Musica()
+        {
+            return View();
+        }
+
         public ActionResult Galeria()
         {
             return View();
