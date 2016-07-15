@@ -16,7 +16,7 @@ namespace DjSite.Controllers
             return View();
         }
 
-     
+
         public ActionResult Noticias(string codigo)
         {
             var noticia = new Noticia();

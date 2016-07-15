@@ -215,7 +215,7 @@
                             <h3 class="news-title"> <a href="news_single.html">Ranking Musica Actual</a> </h3>
                             <p>Algunas de las canciones más tocadas en radios y Discoteques.</p>
                             <div class="meta">
-                                <span> <i class="icon-time mi"></i>11 de Junio, 2016 00:17 PM </span>
+                                <span> <i class="icon-time mi"></i>15 de Julio, 2016 00:17 AM </span>
                             </div><!-- meta -->
                             <a href=@Url.Content("#") class="sign-btn tbutton small" id="leerA"><span>Leer más</span></a>
                             <div id="popupNoticias">
@@ -224,30 +224,15 @@
 
                         </div><!-- span7 -->
                     </div><!-- news -->
-                    <script type="text/javascript">
-                        jQuery(document).ready(function () {
-                            jQuery('#leerA').click(function (e) {
-                                e.preventDefault(); //Para que no se vaya al linkvar la
-                                var codigo = "1";
-
-                                jQuery.ajax({
-                                    url: '@Url.Content("~/Home/Noticias/1")',
-                                    type: 'POST',
-                                    data: codigo
-                                }).done(function (json) {
-
-                                });
-
-                            });
-                        });
-                    </script>
+                   
                     @*<script type="text/javascript">
                             jQuery(document).ready(function () {
                                 jQuery('#leerA').click(function (e) {
                                     e.preventDefault(); //Para que no se vaya al link
                                     jQuery.ajax({
-                                        url: 'Home/Noticias',
-                                        type: 'get'
+                                        url: '@Url.Action("Noticias", "Home")',
+                                        type: 'post',
+                                        data:'1'
                                     }).done(function (vistaParcial) {
                                         jQuery('#popupNoticias').html(vistaParcial).bPopup();
                                     });
@@ -285,10 +270,10 @@
                     <div class="news row-fluid animtt" data-gen="fadeUp" style="opacity:0;">
                         <div class="span5"><img class="four-radius" src="@Url.Content("~/Content/MyTemplate/")images/assets/news2.jpg" alt="#"></div>
                         <div class="span7">
-                            <h3 class="news-title"> <a href="news_single.html">Eurocopa de Francia 2016 en las manos de David Guetta</a> </h3>
-                            <p>Guetta ha creado la canción 'This One's for you' junto a Zara Larsson, canción oficial que sonará en toda Europa a partir de este viernes, día en el que comienza la Eurocopa de Francia 2016.</p>
+                            <h3 class="news-title"> <a href="news_single.html">Como pasa el tiempo, 20 canciones que tienen 20 añitos ya</a> </h3>
+                            <p>Todos los nacidos en los 80, cada vez se les hace más difícil asimilar el paso del tiempo,con esta selección lo comprobaran...</p>
                             <div class="meta">
-                                <span> <i class="icon-time mi"></i>10 de Junio, 2016 11:01 AM </span>
+                                <span> <i class="icon-time mi"></i>14 de Julio, 2016 11:01 AM </span>
                             </div><!-- meta -->
                             <a href="news_single.html" class="sign-btn tbutton small"><span>Leer más</span></a>
                         </div><!-- span7 -->
@@ -297,10 +282,10 @@
                     <div class="news row-fluid animtt" data-gen="fadeUp" style="opacity:0;">
                         <div class="span5"><img class="four-radius" src="@Url.Content("~/Content/MyTemplate/")images/assets/news3.jpg" alt="#"></div>
                         <div class="span7">
-                            <h3 class="news-title"> <a href="news_single.html">Copa América Centenario a cargo de Pitbull y Becky g</a> </h3>
-                            <p>El cantante de origen cubano, y la artista de ascendencia mexicana serán los que presenten el tema oficial de la Copa América Centenario </p>
+                            <h3 class="news-title"> <a href="news_single.html">Listado musical para subir el animo</a> </h3>
+                            <p>Se trata de diez canciones capaces de subirte en unos minutos el ánimo, según estudios cientificos y de gente con mucho tiempo jaja. Anímate a comprobarlo... </p>
                             <div class="meta">
-                                <span> <i class="icon-time mi"></i>04 de Junio ,2016 2:00 AM </span>
+                                <span> <i class="icon-time mi"></i>10 de Junio, 2016 2:00 AM </span>
                             </div><!-- meta -->
                             <a href="news_single.html" class="tbutton small"><span>Leer más</span></a>
                         </div><!-- span7 -->
