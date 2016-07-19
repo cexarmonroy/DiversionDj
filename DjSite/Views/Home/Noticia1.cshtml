@@ -1,0 +1,149 @@
+﻿
+@{
+    ViewBag.Title = "Noticia1";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+<div class="under_header">
+    <img src="images/assets/breadcrumbs6.png" alt="#">
+</div><!-- under header -->
+
+<div class="page-content back_to_up">
+ 
+
+    <div class="row row-fluid clearfix mbf">
+        <div class="span8 posts">
+            <div class="def-block">
+                <div class="post row-fluid clearfix">
+                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/news2.jpg" alt="#">
+                    <h3 class="post-title"> <i class="icon-pencil"></i><a>Como pasa el tiempo, 20 canciones que tienen 20 añitos ya</a> </h3>
+                    <p>Saquen su mejor lápiz bic y rebobinemos la cinta 20 añazos para recordar qué temazos sonaban entonces y la verdad es que nos sorprende comprobar cómo estas canciones siguen encantándonos y emocionándonos como el primer día. ¡No han envejecido nada!</p>
+                    
+                    <div id='coin-slider'>
+                        <a href="" target="_blank">
+                            <img  src="@Url.Content("~/Content/MyTemplate/")images/assets/spice.jpg">
+                            <span>
+                                Spice Girls - Wannabe.
+                            </span>
+                        </a>
+                        <a >
+                            <img src="@Url.Content("~/Content/MyTemplate/")images/assets/shakira.jpg">
+                            <span>
+                                Shakira - Estoy Aquí
+                            </span>
+                        </a>
+                    </div>
+
+
+
+                
+                </div><!-- post -->
+
+              
+
+              
+
+                <div class="clearfix">
+                    <h4> LEAVE A REPLY</h4><span class="liner"></span>
+                    <form action="#" method="post" id="commentform">
+                        <p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p>
+                        <div class="clearfix">
+                            <div class="grid_4 alpha mb"><input name="author" type="text" value="" placeholder="Your Name *" required=""></div>
+                            <div class="grid_4 mb"><input name="email" type="email" value="" placeholder="Your Email *" required=""></div>
+                            <div class="grid_4 omega mb"><input name="url" type="text" value="" placeholder="Website"></div>
+                        </div>
+                        <textarea name="comment" rows="8" placeholder="Your Message *" required=""></textarea>
+                        <p>
+                            <input name="submit" type="submit" class="send-message" value="Submit it Now">
+                            <input type="hidden" name="comment_post_ID" value="6" id="comment_post_ID">
+                            <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+                        </p>
+                    </form>
+                </div><!-- Form clearfix -->
+            </div><!-- def block -->
+        </div><!-- span8 posts -->
+
+        <div class="span4 sidebar">
+            <div class="def-block widget">
+                <h4> NewsLetters </h4><span class="liner"></span>
+                <div class="widget-content">
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+                    <form id="newsletters" method="post" action="http://feedburner.google.com/fb/a/mailverify" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=sevenpsd', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+                        <input type="email" onfocus="if (this.value=='Type Your Email') this.value = '';" onblur="if (this.value=='') this.value = 'Type Your Email';" value="Type Your Email" placeholder="Type Your Email" required="required">
+                        <button type="submit"><i class="icon-ok"></i></button>
+                    </form>
+                </div><!-- widget content -->
+            </div><!-- def block widget NewsLetters -->
+
+            <div class="def-block widget">
+                <h4> Categories </h4><span class="liner"></span>
+                <div class="widget-content">
+                    <ul class="list">
+                        <li><a href="#"><i class="icon-caret-right"></i> News and updates (7) </a></li>
+                        <li><a href="#"><i class="icon-caret-right"></i> Interviews (13)</a></li>
+                        <li><a href="#"><i class="icon-caret-right"></i> Concerts (34)</a></li>
+                        <li><a href="#"><i class="icon-caret-right"></i> Videos (19)</a></li>
+                        <li><a href="#"><i class="icon-caret-right"></i> Podcasts (17)</a></li>
+                    </ul>
+                </div><!-- widget content -->
+            </div><!-- def block widget categories -->
+
+            <div class="def-block widget">
+                <h4> Tags </h4><span class="liner"></span>
+                <div class="widget-content tags">
+                    <a href="#" class="#" title="17 topic"><i class="icon-tag"></i> mp3 </a>
+                    <a href="#" class="#" title="44 topic"><i class="icon-tag"></i> interview </a>
+                    <a href="#" class="#" title="10 topic"><i class="icon-tag"></i> video </a>
+                    <a href="#" class="#" title="20 topic"><i class="icon-tag"></i> ogg </a>
+                    <a href="#" class="#" title="2 topic"><i class="icon-tag"></i> fl studio </a>
+                    <a href="#" class="#" title="29 topic"><i class="icon-tag"></i> dj angel </a>
+                    <a href="#" class="#" title="4 topic"><i class="icon-tag"></i> remix </a>
+                </div><!-- widget content -->
+            </div><!-- def block widget tags -->
+
+            <div class="def-block widget">
+                <h4> Featured Videos </h4><span class="liner"></span>
+                <div class="widget-content row-fluid">
+                    <div class="videos clearfix flexslider">
+                        <ul class="slides">
+                            <li class="featured-video">
+                                <a href="video_single_wide.html">
+                                    <img src="images/assets/video1.jpg" alt="#">
+                                    <i class="icon-play-sign"></i>
+                                    <h3>I Know You Want Me</h3>
+                                    <span>Fitbull</span>
+                                </a>
+                            </li><!-- slide -->
+                            <li class="featured-video">
+                                <a href="video_single_wide.html">
+                                    <img src="images/assets/video2.jpg" alt="#">
+                                    <i class="icon-play-sign"></i>
+                                    <h3>I Like It</h3>
+                                    <span>Enrique</span>
+                                </a>
+                            </li><!-- slide -->
+                            <li class="featured-video">
+                                <a href="video_single_wide.html">
+                                    <img src="images/assets/video3.jpg" alt="#">
+                                    <i class="icon-play-sign"></i>
+                                    <h3>Tommorow</h3>
+                                    <span>Dj Michele</span>
+                                </a>
+                            </li><!-- slide -->
+                        </ul>
+                    </div>
+                </div><!-- widget content -->
+            </div><!-- def block widget videos -->
+          
+
+            <div class="def-block widget">
+                <h4> Ads </h4><span class="liner"></span>
+                <div class="widget-content tac">
+                    <a href="#" title="Advertise"><img src="images/ads1.gif" alt="#"></a>
+                </div><!-- widget content -->
+            </div><!-- def block widget ads -->
+
+        </div><!-- span4 sidebar -->
+    </div><!-- row clearfix -->
+</div><!-- end page content -->
+

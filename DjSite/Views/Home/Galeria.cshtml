@@ -4,87 +4,6 @@
     Layout = "~/Views/Shared/_MyLayout.cshtml";
 }
 
-<div id="layout" class="full">
-    <!-- popup login -->
-    <div id="popupLogin">
-        <div class="def-block widget">
-            <h4> Login </h4><span class="liner"></span>
-            <div class="widget-content row-fluid">
-                <form id="popup_login_form">
-                    <input type="text" name="login_username" id="login_username" onfocus="if (this.value=='username') this.value = '';" onblur="if (this.value=='') this.value = 'Usuario';" value="Usuario" placeholder="Usuario">
-                    <input type="password" name="login_password" id="login_password" onfocus="if (this.value=='password') this.value = '';" onblur="if (this.value=='') this.value = 'password';" value="password" placeholder="Password">
-                    <a href="#" class="tbutton small"><span>Iniciar Sesión</span></a>
-                    <a href="#" class="tbutton color2 small"><span>Registrarse</span></a>
-                </form><!-- login form -->
-            </div><!-- content -->
-        </div><!-- widget -->
-        <div id="popupLoginClose">x</div>
-    </div><!-- popup login -->
-    <div id="LoginBackgroundPopup"></div>
-    <!-- popup login -->
-
-    <header id="header" class="glue">
-        <div class="row clearfix">
-            <div class="little-head">
-                <div id="Login_PopUp_Link" class="sign-btn tbutton small"><span>Iniciar Sesión</span></div>
-
-                <div class="social social-head">
-                    <a href="https://twitter.com/diversiondj" class="bottomtip" title="Sigueme en Twitter" target="_blank"><i class="icon-twitter"></i></a>
-                    <a href="https://www.facebook.com/Diversion-Dj-81993277783/" class="bottomtip" title="Like Facebook" target="_blank"><i class="icon-facebook"></i></a>
-                    <a href="https://plus.google.com/" class="bottomtip" title="GooglePlus" target="_blank"><i class="icon-google-plus"></i></a>
-                    <a href="https://www.instagram.com/diversiondj/" class="bottomtip" title="Instagram" target="_blank"><i class="icon-instagram"></i></a>
-                    <a href="https://soundcloud.com/diversiondj" class="bottomtip" title="Soundcloud" target="_blank"><i class="icon-cloud"></i></a>
-                    <a href="http://www.linkedin.com/" class="bottomtip" title="Linkedin" target="_blank"><i class="icon-linkedin"></i></a>
-                </div><!-- end social -->
-
-                <div class="search">
-                    <form action="search.html" id="search" method="get">
-                        <input id="inputhead" name="search" type="text" onfocus="if (this.value == 'Empezar a buscar...') this.value = '';" onblur="    if (this.value == '') this.value = 'Empezar a buscar...';" value="Empezar a buscar..." placeholder="Empezar a buscar...">
-                        <button type="submit"><i class="icon-search"></i></button>
-                    </form><!-- end form -->
-                </div><!-- search -->
-            </div><!-- little head -->
-        </div><!-- row -->
-
-        <div class="headdown">
-            <div class="row clearfix">
-                <div class="logo bottomtip" title="Diversion Dj">
-                    <a href="#"><img src="@Url.Content("~/Content/MyTemplate/")images/logo.png" alt="DiversionDj"></a>
-                </div><!-- end logo -->
-
-                <nav>
-                    <ul class="sf-menu">
-                        <li class="current selectedLava">
-                            <a href=@Url.Content("~/Home/Index")>Home<span class="sub">Comienza aquí</span></a>
-                            <ul>
-                                <li><a href=@Url.Content("~/Home/Musica")>Noticias</a></li>
-                                <li><a href=@Url.Content("~/Home/Musica")>Eventos</a></li>
-                                <li><a href=@Url.Content("~/Home/Musica")>Acerca de mi</a></li>
-                            </ul>
-                        </li>
-
-                        <li><a href=@Url.Content("~/Home/Musica")>Musica<span class="sub">Escuchame</span></a></li>
-                        <li><a href=@Url.Content("~/Home/Videos")>Video<span class="sub">Algunos demos</span></a></li>
-                        <li>
-                            <a href=@Url.Content("~/Home/Galeria")>Galeria<span class="sub">Galeria de Fotos</span></a>
-                            <ul>
-                                <li><a href=@Url.Content("~/Home/Galeria")>Galeria</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">Contacto<span class="sub">Arma tu Fiesta</span></a>
-                            <ul>
-                                <li><a href=@Url.Content("~/Home/Contacto")>Envia tu Consulta</a></li>
-                                <li><a href=@Url.Content("~/Home/ArmarLista")>Crea tu lista</a></li>
-                                <li><a href=@Url.Content("~/Home/Musica")>Foro</a></li>
-
-                            </ul>
-                        </li>
-                    </ul><!-- end menu -->
-                </nav><!-- end nav -->
-            </div><!-- row -->
-        </div><!-- headdown -->
-    </header><!-- end header -->
     <div class="under_header">
    
     </div><!-- under header -->
@@ -92,63 +11,54 @@
     <div class="page-content back_to_up">
        
       
-
-        <div class="row row-fluid clearfix mbf">
-            <div class="posts">
-                <div class="def-block" style="min-height: 400px;">
-
-                    <div class="topbar">
-                        <div id="close" class="tbutton small tback"><span>< Back to Albums</span></div>
-                        <h4 id="name">Galeria de Fotos</h4><span class="liner"></span>
-                    </div>
-
-                    <ul id="tp-grid" class="tp-grid">
-
-                        <!-- Summer Bash In CA -->
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/1.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/1.jpg" alt="#1" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/2.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/2.jpg" alt="#2" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/3.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/3.jpg" alt="#3" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/4.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/4.jpg" alt="#4" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/5.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/5.jpg" alt="#5" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/6.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/6.jpg" alt="#6" /></a></li>
-                        <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/7.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/7.jpg" alt="#7" /></a></li>
-
-                        <!-- San Francisco Party -->
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/8.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/8.jpg" alt="#8" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/9.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/9.jpg" alt="#9" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/10.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/10.jpg" alt="#10" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/11.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/11.jpg" alt="#11" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/12.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/12.jpg" alt="#12" /></a></li>
-                        <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/13.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/13.jpg" alt="#13" /></a></li>
-
-
-                    </ul>
-
-                </div><!-- def block -->
-            </div><!-- posts -->
-
-        </div><!-- row clearfix -->
-    </div><!-- end page content -->
-
-
-    <footer id="footer">
-        <div class="footer-last">
-            <div class="row clearfix">
-                <span class="copyright">© 2016 by DiversionDj. All Rights Reserved.</span>
-                <div id="toTop"><i class="icon-angle-up"></i></div><!-- Back to top -->
-                <div class="foot-menu">
+        <div class="page-content back_to_up">
+            <div class="row clearfix mb">
+                <div class="breadcrumbIn">
                     <ul>
-                        <li><a href="@Url.Content("~/Home/Index")">Home</a></li>
-                        <li><a href=@Url.Content("~/Home/Musica")>Música</a></li>
-                        <li><a href="@Url.Content("~/Home/Videos")">Video</a></li>
-                        <li><a href=@Url.Content("~/Home/Galeria")>Galeria</a></li>
-                        <li><a href=@Url.Content("~/Home/Contacto")>Contacto</a></li>
-                    </ul><!-- end links -->
-                </div><!-- end foot menu -->
+                        <li><a href="index.html" class="toptip" original-title="Homepage"> <i class="icon-home"></i> </a></li>
+                        <li> Gallery 2 Column </li>
+                    </ul>
+                </div><!-- breadcrumbIn -->
             </div><!-- row -->
-        </div><!-- end last -->
 
-    </footer><!-- end footer -->
+            <div class="row row-fluid clearfix mbf">
+                <div class="posts">
+                    <div class="def-block" style="min-height: 400px;">
 
-</div><!-- end layout -->
+                        <div class="topbar">
+                            <div id="close" class="tbutton small tback"><span>< Back to Albums</span></div>
+                            <h4 id="name">Photo Gallery</h4><span class="liner"></span>
+                        </div>
+
+                        <ul id="tp-grid" class="tp-grid">
+
+
+                            <!-- Summer Bash In CA -->
+                            <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/1.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/1.jpg" alt="#1" /></a></li>
+                            <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/2.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/2.jpg" alt="#2" /></a></li>
+                            <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/3.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/3.jpg" alt="#3" /></a></li>
+                            <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/4.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/4.jpg" alt="#4" /></a></li>
+                            <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/5.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/5.jpg" alt="#5" /></a></li>
+                            <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/6.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/6.jpg" alt="#6" /></a></li>
+                            <li data-pile="Summer Bash In CA" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/7.jpg" data-gal="photo[Summer Bash In CA]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/7.jpg" alt="#7" /></a></li>
+
+                            <!-- San Francisco Party -->
+                            <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/8.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/8.jpg" alt="#8" /></a></li>
+                            <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/9.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/9.jpg" alt="#9" /></a></li>
+                            <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/10.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/10.jpg" alt="#10" /></a></li>
+                            <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/11.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/11.jpg" alt="#11" /></a></li>
+                            <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/12.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/12.jpg" alt="#12" /></a></li>
+                            <li data-pile="San Francisco Party" class="grid_6"><a href="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/13.jpg" data-gal="photo[San Francisco Party]"><img src="@Url.Content("~/Content/MyTemplate/")images/assets/gallery/13.jpg" alt="#13" /></a></li>
+
+
+                        </ul>
+
+                    </div><!-- def block -->
+                </div><!-- posts -->
+
+            </div><!-- row clearfix -->
+        </div><!-- end page content -->
+
+    </div>
+
 

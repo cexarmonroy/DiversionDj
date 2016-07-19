@@ -41,6 +41,18 @@ namespace DjSite.Controllers
             return PartialView("Noticias", noticia);
         }
 
+        public ActionResult Noticia1()
+        {
+            return View();
+        }
+        public ActionResult Noticia2()
+        {
+            return View();
+        }
+        public ActionResult Noticia3()
+        {
+            return View();
+        }
         public ActionResult test()
         {
             ViewBag.Titulo = "Ranking Musical";
