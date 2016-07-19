@@ -334,6 +334,8 @@
     <Content Include="Content\MyTemplate\images\slides\slider6.jpg" />
     <Content Include="Content\MyTemplate\images\tipsy.gif" />
     <Content Include="Content\MyTemplate\images\tipsy_000.gif" />
+    <Content Include="Content\MyTemplate\jquery.flexslider-min.js" />
+    <Content Include="Content\MyTemplate\jquery.flexslider.js" />
     <Content Include="Content\MyTemplate\js\bootbox.js" />
     <Content Include="Content\MyTemplate\js\countdown.js" />
     <Content Include="Content\MyTemplate\js\custom.js" />

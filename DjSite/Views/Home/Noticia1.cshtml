@@ -18,25 +18,99 @@
                     <img src="@Url.Content("~/Content/MyTemplate/")images/assets/news2.jpg" alt="#">
                     <h3 class="post-title"> <i class="icon-pencil"></i><a>Como pasa el tiempo, 20 canciones que tienen 20 añitos ya</a> </h3>
                     <p>Saquen su mejor lápiz bic y rebobinemos la cinta 20 añazos para recordar qué temazos sonaban entonces y la verdad es que nos sorprende comprobar cómo estas canciones siguen encantándonos y emocionándonos como el primer día. ¡No han envejecido nada!</p>
+
+                    <section class="slider">
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/spice.jpg" />
+                                    <p class="flex-caption">Spice Girls - Wannabe.﻿﻿</p>
+                                </li>
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/shakira.jpg" />
+                                    <p class="flex-caption">Backstreet boys - We've got it goin' on.</p>
+                                </li>
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/shakira.jpg" />
+                                    <p class="flex-caption">Shakira - Estoy Aquí.</p>
+                                </li>
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/spice.jpg" />
+                                    <p class="flex-caption">The Cardigans - Lovefool.﻿﻿</p>
+                                </li>
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/shakira.jpg" />
+                                    <p class="flex-caption">Alejandro Sanz - Quiero morir en tu veneno.</p>
+                                </li>
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/spice.jpg" />
+                                    <p class="flex-caption">Rosana - El talismán.</p>
+                                </li>
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/shakira.jpg" />
+                                    <p class="flex-caption">Jarabe de Palo - La Flaca.</p>
+                                </li>
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/spice.jpg" />
+                                    <p class="flex-caption">Marilyn Manson - The Beautiful People.﻿﻿</p>
+                                </li>
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/shakira.jpg" />
+                                    <p class="flex-caption">No Doubt - Don’t Speak.</p>
+                                </li>
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/spice.jpg" />
+                                    <p class="flex-caption">Sheryl Crow - If It Makes You Happy.</p>
+                                </li>
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/shakira.jpg" />
+                                    <p class="flex-caption">Fugees - Killing Me Softly with his song.</p>
+                                </li>
+
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/spice.jpg" />
+                                    <p class="flex-caption">Ella Baila Sola - Lo echamos a suertes.﻿﻿</p>
+                                </li>
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/shakira.jpg" />
+                                    <p class="flex-caption">Alanis Morissette - Ironic.</p>
+                                </li>
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/spice.jpg" />
+                                    <p class="flex-caption">Metallica - Until it sleeps.﻿﻿</p>
+                                </li>
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/shakira.jpg" />
+                                    <p class="flex-caption">2Pac Feat Dr. Dre- California Love</p>
+                                </li>
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/spice.jpg" />
+                                    <p class="flex-caption">The Cranberries - Salvation.</p>
+                                </li>
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/shakira.jpg" />
+                                    <p class="flex-caption">No Mercy - Where do you go.</p>
+                                </li>
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/spice.jpg" />
+                                    <p class="flex-caption">Laura Pausini - Inolvidable.﻿﻿</p>
+                                </li>
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/shakira.jpg" />
+                                    <p class="flex-caption">Los Pericos-Caliente</p>
+                                </li>
+                                <li>
+                                    <img src="@Url.Content("~/Content/MyTemplate/")images/assets/shakira.jpg" />
+                                    <p class="flex-caption">Ricky Martin - María.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
                     
-                    <div id='coin-slider'>
-                        <a href="" target="_blank">
-                            <img  src="@Url.Content("~/Content/MyTemplate/")images/assets/spice.jpg">
-                            <span>
-                                Spice Girls - Wannabe.
-                            </span>
-                        </a>
-                        <a >
-                            <img src="@Url.Content("~/Content/MyTemplate/")images/assets/shakira.jpg">
-                            <span>
-                                Shakira - Estoy Aquí
-                            </span>
-                        </a>
-                    </div>
 
 
 
-                
+
                 </div><!-- post -->
 
               
@@ -147,3 +221,16 @@
     </div><!-- row clearfix -->
 </div><!-- end page content -->
 
+<script type="text/javascript">
+    jQuery(function () {
+        SyntaxHighlighter.all();
+    });
+    jQuery(window).load(function () {
+        jQuery('.flexslider').flexslider({
+            animation: "slide",
+            start: function (slider) {
+                jQuery('body').removeClass('loading');
+            }
+        });
+    });
+</script>
