@@ -76,10 +76,7 @@ C:\DiversiondjWeb\DjSite\bin\DjSite.dll.config
 C:\DiversiondjWeb\DjSite\bin\DjSite.dll
 C:\DiversiondjWeb\DjSite\bin\DjSite.pdb
 C:\DiversiondjWeb\DjSite\bin\Antlr3.Runtime.dll
-C:\DiversiondjWeb\DjSite\bin\EntityFramework.dll
-C:\DiversiondjWeb\DjSite\bin\EntityFramework.SqlServer.dll
 C:\DiversiondjWeb\DjSite\bin\Microsoft.AspNet.Identity.Core.dll
-C:\DiversiondjWeb\DjSite\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\DiversiondjWeb\DjSite\bin\Microsoft.AspNet.Identity.Owin.dll
 C:\DiversiondjWeb\DjSite\bin\Microsoft.Owin.dll
 C:\DiversiondjWeb\DjSite\bin\Microsoft.Owin.Host.SystemWeb.dll
@@ -110,11 +107,8 @@ C:\DiversiondjWeb\DjSite\bin\System.Web.WebPages.Deployment.xml
 C:\DiversiondjWeb\DjSite\bin\System.Web.WebPages.Razor.xml
 C:\DiversiondjWeb\DjSite\bin\Newtonsoft.Json.xml
 C:\DiversiondjWeb\DjSite\bin\Antlr3.Runtime.pdb
-C:\DiversiondjWeb\DjSite\bin\EntityFramework.xml
-C:\DiversiondjWeb\DjSite\bin\EntityFramework.SqlServer.xml
 C:\DiversiondjWeb\DjSite\bin\Microsoft.AspNet.Identity.Core.xml
 C:\DiversiondjWeb\DjSite\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\DiversiondjWeb\DjSite\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\DiversiondjWeb\DjSite\bin\Microsoft.Owin.xml
 C:\DiversiondjWeb\DjSite\bin\Microsoft.Owin.Host.SystemWeb.xml
 C:\DiversiondjWeb\DjSite\bin\Microsoft.Owin.Security.xml
@@ -131,11 +125,8 @@ C:\DiversiondjWeb\DjSite\bin\es\System.Web.Razor.resources.dll
 C:\DiversiondjWeb\DjSite\bin\es\System.Web.WebPages.resources.dll
 C:\DiversiondjWeb\DjSite\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\DiversiondjWeb\DjSite\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\DiversiondjWeb\DjSite\bin\es\EntityFramework.resources.dll
-C:\DiversiondjWeb\DjSite\bin\es\EntityFramework.SqlServer.resources.dll
 C:\DiversiondjWeb\DjSite\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
 C:\DiversiondjWeb\DjSite\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
-C:\DiversiondjWeb\DjSite\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
 C:\DiversiondjWeb\DjSite\bin\es\Microsoft.Owin.resources.dll
 C:\DiversiondjWeb\DjSite\bin\es\Microsoft.Owin.Host.SystemWeb.resources.dll
 C:\DiversiondjWeb\DjSite\bin\es\Microsoft.Owin.Security.resources.dll
