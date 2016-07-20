@@ -273,6 +273,6 @@ E:\GitHubSitio\DjSite\bin\es\Microsoft.Owin.Security.Facebook.resources.dll
 E:\GitHubSitio\DjSite\bin\es\Microsoft.Owin.Security.Google.resources.dll
 E:\GitHubSitio\DjSite\bin\es\Microsoft.Owin.Security.Twitter.resources.dll
 E:\GitHubSitio\DjSite\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
+E:\GitHubSitio\DjSite\obj\Debug\DjSite.csprojResolveAssemblyReference.cache
 E:\GitHubSitio\DjSite\obj\Debug\DjSite.dll
 E:\GitHubSitio\DjSite\obj\Debug\DjSite.pdb
-E:\GitHubSitio\DjSite\obj\Debug\DjSite.csprojResolveAssemblyReference.cache
