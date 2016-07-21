@@ -360,8 +360,8 @@
     <Content Include="Content\MyTemplate\images\slides\slider6.jpg" />
     <Content Include="Content\MyTemplate\images\tipsy.gif" />
     <Content Include="Content\MyTemplate\images\tipsy_000.gif" />
-    <Content Include="Content\MyTemplate\jquery.flexslider-min.js" />
-    <Content Include="Content\MyTemplate\jquery.flexslider.js" />
+    <Content Include="Content\MyTemplate\jssor.slider.min.js" />
+    <Content Include="Content\MyTemplate\jssor.slider.mini.js" />
     <Content Include="Content\MyTemplate\js\bootbox.js" />
     <Content Include="Content\MyTemplate\js\countdown.js" />
     <Content Include="Content\MyTemplate\js\custom.js" />
@@ -516,6 +516,8 @@
     <Content Include="Views\Home\ArmarLista.cshtml" />
     <Content Include="Views\Home\Musica.cshtml" />
     <Content Include="Views\Home\Noticia1.cshtml" />
+    <Content Include="Views\Home\Noticia2.cshtml" />
+    <Content Include="Views\Home\Noticia3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
